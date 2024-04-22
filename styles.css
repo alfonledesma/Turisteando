@@ -1,0 +1,200 @@
+:root{
+  --primary-font: Georgia, 'Times New Roman', Times, serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+  background-color: lightyellow;
+  }
+
+section:hover {
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#icono{
+  font-family: fantasy;
+  color: rgb(1, 46, 143);
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+.navbar {
+  background-color: rgb(185, 52, 185);
+  padding: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  }
+
+.space-navbar {
+    height: 10px;
+  }
+
+.nav-item {
+    color: white;
+    text-decoration: palevioletred;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+
+.nav-item:hover {
+    background-color: #8b8a8a;
+  }
+
+.imagen-paisaje {
+    height: 700px;
+    background-image:
+    url('https://i0.wp.com/vacacionesporargentina.com/wp-content/uploads/2020/11/waterfall-5040210_1920.jpg?fit=1920%2C1272&ssl=1');
+    background-size: cover;
+    box-shadow: 5px 5px 4px rgb(0, 0, 0);
+    border-radius: 5px  ;
+}
+.contenedor-princ{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+  
+.lugares {
+  height: 550px;
+  width: 300px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  margin: 15px;
+  padding: 8px;
+}
+
+.imagen-mendoza{
+  height: 200px;
+  background-image: url('mendoza.JPG');
+  background-size: cover;
+  }
+
+.imagen-catamarca{
+    height: 200px;
+    background-image: url('https://destinocatamarca.com/wp-content/uploads/2020/03/puna-destino-catamarca-01-1024x683.jpg');
+    background-size: cover;
+  }
+
+.imagen-jujuy{
+  height: 200px;
+  background-image: url('jujuy.jpg');
+  background-size: cover;
+}
+
+.imagen-tierradelfuego{
+  height: 200px;
+  background-image: url('https://vuelteando.com/wp-content/uploads/2022/08/12.jpg');
+  background-size: cover;
+}
+
+.informacion {
+    padding: 20px;
+  }
+  
+.detalles h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+.detalles p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+.boton-ver-mas {
+    background-color: black;
+    color: #fff;
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.boton-icono:hover {
+  background-color: grey;
+  }
+
+.contenedor{
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  width: 100%;
+}
+
+.div1{
+  margin: 15px;
+  padding: 8px;
+}
+
+@media (740px <= width <= 920px) {
+  .imagen-paisaje{
+    width: 100vw;
+  }
+}  
+
+@media (640px <= width <= 740px) {
+  .imagen-paisaje{
+    width: 100vw;
+  }
+}  
+@media (400px <= width <= 640px) {
+  .imagen-paisaje{
+    width: 100;
+  }
+}
+
+@media (280px <= width <=920px){
+  .navbar{
+    flex-wrap: wrap;
+  }
+  .contenedor{
+    flex-wrap: wrap;
+  }
+}
+@media (width <= 315px){
+  .lugares{
+    height: 600px;
+  }
+}
+@media (width <= 300px){
+  .lugares{
+    height: 610px;
+  }
+}
+@media (280px <= width <= 300px){
+  .lugares{
+    height: 673px;
+  }
+}
+
+  
